@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#nxo0+is1%x#f+vte21v1b7uf!)8(uuy-==-^5vue#6%!x1#kh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #  Custom Apps
-    'users',
+    'user_management',
 
     # Installed Apps
 ]
@@ -133,4 +133,4 @@ STORAGES = {
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'user_management.User'
